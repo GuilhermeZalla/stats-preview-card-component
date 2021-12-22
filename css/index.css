@@ -63,8 +63,7 @@ html {
     background-color: var(--card-background);
     display: flex;
     justify-content: center;
-    width: 65vw;
-    height: 55vh;
+    width: 60%;
     border-radius: 8px;
     margin: 20vh auto;
 }
