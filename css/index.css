@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/**************/
+
+
+/* 0. Variáveis
+/* 1. Gerais
+/* 2. Container
+/* 3. Card Component Body - Main
+/* 4. Card Component Body - Article
+/* 5. Card Component Body - Footer
+/* 6. Card Component Aside
+
+/**************/
+
+
+/* 0. Variáveis
+/**************/
+
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --text: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-heading: hsla(0, 0%, 100%, 0.6);
+    --font-title: 1.7rem;
+    --font-text: .85rem;
+    --font-inter: 'Inter', sans-serif;
+    --font-lexend: 'Lexend Deca', sans-serif;
+}
+
+
+/**************/
+
+
+/* 1. Gerais
+/**************/
+
+body {
+    background-color: var(--main-background);
+}
+
+html {
+    font-size: 15px;
+}
+
+
+/**************/
+
+
+/* 2. Container
+/**************/
+
+.preview-card__container {
+    background-color: var(--card-background);
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+    height: 55vh;
+    border-radius: 8px;
+    margin: 20vh auto;
+}
+
+.preview-card__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/**************/
+
+
+/* 3. Card Component Body - Main
+/**************/
+
+.preview-card__main {
+    padding: 20px 65px 20px 50px;
+    flex-basis: 50%;
+    font-family: var(--font-inter);
+}
+
+
+/**************/
+
+
+/* 4. Card Component Body - Article
+/**************/
+
+.preview-card__article {
+    color: var(--text);
+    font-size: var(--font-text);
+}
+
+.preview-card__main-title {
+    font-weight: 700;
+    font-size: var(--font-title);
+}
+
+.preview-card__main-title>span {
+    color: var(--accent);
+}
+
+.preview-card__main-paragraph {
+    font-weight: 400;
+    line-height: .6cm;
+    color: var(--main-paragraph);
+}
+
+
+/**************/
+
+
+/* 5. Card Component Body - Footer
+/**************/
+
+.preview-card__footer {
+    line-height: .4cm;
+    color: var(--text);
+    margin-top: 2rem;
+    padding-right: 50px;
+}
+
+.preview-card__footer .preview-card__stat>span {
+    font-family: var(--font-lexend);
+    font-size: .60rem;
+    font-weight: 400;
+    color: var(--stat-heading);
+}
+
+
+/**************/
+
+
+/* 6. Card Component Aside
+/**************/
+
+.preview-card__aside-cover {
+    flex-basis: 50%;
+    background-color: hsl(277, 73%, 26%);
+}
+
+.preview-card__aside-cover img {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    filter: opacity(.6);
+}
+
+
+/**************/
