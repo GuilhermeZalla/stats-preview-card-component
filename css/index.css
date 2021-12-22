@@ -155,6 +155,10 @@ html {
 /* 5. Card Component Body - Footer
 /**************/
 
+.preview-card__footer {
+    font-size: var(--font-title);
+}
+
 .preview-card__footer .preview-card__stat>span {
     font-family: var(--font-lexend);
     font-size: .60rem;
@@ -172,6 +176,8 @@ html {
 .preview-card__aside-cover {
     flex-basis: 50%;
     background-color: var(--accent);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .preview-card__aside-cover img {
@@ -183,6 +189,8 @@ html {
 @media screen and (max-width: 900px) {
     .preview-card__aside-cover {
         flex-basis: 100%;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 8px;
     }
     .preview-card__aside-cover img {
         border-top-left-radius: 8px;
