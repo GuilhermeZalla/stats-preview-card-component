@@ -63,6 +63,7 @@ html {
     background-color: var(--card-background);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap-reverse;
     width: 60%;
     border-radius: 8px;
     margin: 20vh auto;
@@ -71,6 +72,21 @@ html {
 .preview-card__footer {
     display: flex;
     justify-content: space-between;
+    line-height: .4cm;
+    color: var(--text);
+    margin-top: 2rem;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .preview-card__container {
+        width: 30%;
+    }
+    .preview-card__footer {
+        text-align: center;
+        flex-direction: column;
+        padding-right: 0;
+    }
 }
 
 
@@ -84,6 +100,13 @@ html {
     padding: 20px 65px 20px 50px;
     flex-basis: 50%;
     font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 900px) {
+    .preview-card__main {
+        padding: 10px 30px;
+        flex-basis: 100%;
+    }
 }
 
 
@@ -113,19 +136,24 @@ html {
     color: var(--main-paragraph);
 }
 
+@media screen and (max-width: 900px) {
+    .preview-card__article {
+        text-align: center;
+    }
+    .preview-card__main-title {
+        font-size: 1.4rem;
+    }
+    .preview-card__main-paragraph {
+        font-size: .80rem;
+    }
+}
+
 
 /**************/
 
 
 /* 5. Card Component Body - Footer
 /**************/
-
-.preview-card__footer {
-    line-height: .4cm;
-    color: var(--text);
-    margin-top: 2rem;
-    padding-right: 50px;
-}
 
 .preview-card__footer .preview-card__stat>span {
     font-family: var(--font-lexend);
@@ -143,13 +171,23 @@ html {
 
 .preview-card__aside-cover {
     flex-basis: 50%;
-    background-color: hsl(277, 73%, 26%);
+    background-color: var(--accent);
 }
 
 .preview-card__aside-cover img {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    filter: opacity(.6);
+    filter: opacity(.7);
+}
+
+@media screen and (max-width: 900px) {
+    .preview-card__aside-cover {
+        flex-basis: 100%;
+    }
+    .preview-card__aside-cover img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 }
 
 
