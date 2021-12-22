@@ -81,6 +81,7 @@ html {
 @media screen and (max-width: 900px) {
     .preview-card__container {
         width: 70%;
+        margin: 15vh auto;
     }
     .preview-card__footer {
         text-align: center;
