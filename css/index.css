@@ -86,6 +86,7 @@ html {
         text-align: center;
         flex-direction: column;
         padding-right: 0;
+        font-size: var(--font-title);
     }
 }
 
@@ -154,10 +155,6 @@ html {
 
 /* 5. Card Component Body - Footer
 /**************/
-
-.preview-card__footer {
-    font-size: var(--font-title);
-}
 
 .preview-card__footer .preview-card__stat>span {
     font-family: var(--font-lexend);
